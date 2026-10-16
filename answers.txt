@@ -3,17 +3,17 @@
 # Times are seconds since the first "Running: ..." stats line of the run.
 
 # 3.1 Task 2 (results_3.1/)
-3.1.Q1 =
-3.1.Q1.ttft_req10_s =
-3.1.Q1.ttft_req40_s =
-3.1.Q2 =
-3.1.Q2.gpu_blocks =
-3.1.Q2.gpu_tokens =
-3.1.Q2.kv_kib_per_token_per_gpu =
-3.1.Q2.kv_gib_per_gpu =
-3.1.Q2.peak_gpu_kv_pct =
-3.1.Q2.running_at_peak =
-3.1.Q2.pending_at_peak =
+3.1.Q1 = c
+3.1.Q1.ttft_req10_s = 6.313172771013342
+3.1.Q1.ttft_req40_s = 30.371738147980068
+3.1.Q2 = d
+3.1.Q2.gpu_blocks = 1024
+3.1.Q2.gpu_tokens = 16384
+3.1.Q2.kv_kib_per_token_per_gpu = 48 * 8 * 2 * 128 * 2 / 2 = 98304 bytes
+3.1.Q2.kv_gib_per_gpu = 98304 * 16384 / 2^30 = 1.5 GiB
+3.1.Q2.peak_gpu_kv_pct = 99.8
+3.1.Q2.running_at_peak = 12
+3.1.Q2.pending_at_peak = 21
 
 # 3.2 Task 3 (results_3.2/)
 3.2.Q1 =
