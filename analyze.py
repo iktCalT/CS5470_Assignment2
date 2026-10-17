@@ -43,6 +43,7 @@ def main():
     ax_kv_usage.plot(time, kv_usages)
     ax_kv_usage.set_xlabel("Time (s)")
     ax_kv_usage.set_ylabel("GPU KV cache usage (%)")
+    ax_kv_usage.set_title("GPU KV Cache Usage (%)")
     # ax_kv_usage.legend()
     fig_kv_usage.savefig(os.path.join(path_1, "gpu_kv.png"), dpi=300)
 
