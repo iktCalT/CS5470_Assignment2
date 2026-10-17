@@ -186,7 +186,7 @@ def read_server(filename: str) -> tuple[np.ndarray, np.ndarray, np.ndarray, np.n
                 
                 if start_pending is None and pend > 0:
                     start_pending = t
-                if start_pending is not None and pend == 0:
+                if start_pending is not None and pend == 0 and end_pending is None:
                     end_pending = t
 
     relative_time = np.array([

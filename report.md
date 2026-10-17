@@ -1,6 +1,6 @@
 <style>
 body {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 table {
@@ -17,12 +17,19 @@ img {
 
 ## Results 3.1
 
+3.1, 1, c\
+3.1, 2, d
+
 ![3.1.1](./results_3.1/ttft.png)
 ![3.1.2](./results_3.1/tpot.png)
-
 ![3.1.3](./results_3.1/gpu_kv.png)
 
 ## Results 3.2
+
+3.2, 1, b\
+3.2, 2, a\
+3.2, 3, c\
+3.2, 4, b
 
 ![3.2.1](./results_3.2/ttft.png)
 ![3.2.2](./results_3.2/tpot.png)
