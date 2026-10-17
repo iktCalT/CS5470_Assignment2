@@ -1,0 +1,60 @@
+INFO:     Started server process [853924]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:46010 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52864 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46834 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46840 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46844 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46850 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46864 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46880 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46884 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46892 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46902 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46910 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46938 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46940 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46948 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55032 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55034 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55036 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55038 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55040 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55056 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55070 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55076 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55090 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55102 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55112 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55124 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55138 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55144 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55156 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55164 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55176 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55190 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55192 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55198 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55214 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55216 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55222 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55236 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55238 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55246 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55258 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55268 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36692 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36706 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36718 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36722 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36736 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36744 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36760 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36776 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+/pscratch/sd/z/zz986/sysml-hw2/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

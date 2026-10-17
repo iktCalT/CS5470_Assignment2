@@ -1,0 +1,85 @@
+2026-10-14 15:50:27,822 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:50:32,562 - vllm.plugins - INFO - Available plugins for group vllm.general_plugins:
+2026-10-14 15:50:32,566 - vllm.plugins - INFO - - lora_filesystem_resolver -> vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver
+2026-10-14 15:50:32,569 - vllm.plugins - INFO - All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+2026-10-14 15:50:33,176 - vllm.entrypoints.openai.api_server - INFO - vLLM API server version 0.9.0.2.dev0+g5fbbfe9a4.d20261013
+2026-10-14 15:50:33,796 - vllm.entrypoints.openai.cli_args - INFO - non-default args: {'model': 'meta-llama/CodeLlama-34b-hf', 'max_model_len': 16368, 'enforce_eager': True, 'disable_sliding_window': True, 'load_format': 'dummy', 'tensor_parallel_size': 2, 'swap_space': 16.0, 'num_gpu_blocks_override': 1024, 'max_num_seqs': 512, 'preemption_mode': 'swap', 'disable_log_requests': True}
+2026-10-14 15:50:40,464 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:50:43,382 - vllm.plugins - INFO - Available plugins for group vllm.general_plugins:
+2026-10-14 15:50:43,386 - vllm.plugins - INFO - - lora_filesystem_resolver -> vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver
+2026-10-14 15:50:43,392 - vllm.plugins - INFO - All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+2026-10-14 15:50:46,712 - vllm.config - INFO - This model supports multiple tasks: {'reward', 'embed', 'generate', 'score', 'classify'}. Defaulting to 'generate'.
+2026-10-14 15:50:46,751 - vllm.config - INFO - Defaulting to use mp for distributed inference
+2026-10-14 15:50:46,755 - vllm.platforms.cuda - WARNING - To see benefits of async output processing, enable CUDA graph. Since, enforce-eager is enabled, async output processor cannot be used
+2026-10-14 15:50:46,770 - vllm.entrypoints.openai.api_server - INFO - Started engine process with PID 1043670
+2026-10-14 15:50:52,431 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:50:55,596 - vllm.plugins - INFO - Available plugins for group vllm.general_plugins:
+2026-10-14 15:50:55,599 - vllm.plugins - INFO - - lora_filesystem_resolver -> vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver
+2026-10-14 15:50:55,601 - vllm.plugins - INFO - All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+2026-10-14 15:50:55,612 - vllm.engine.llm_engine - INFO - Initializing a V0 LLM engine (v0.9.0.2.dev0+g5fbbfe9a4.d20261013) with config: model='meta-llama/CodeLlama-34b-hf', speculative_config=None, tokenizer='meta-llama/CodeLlama-34b-hf', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=16368, download_dir=None, load_format=dummy, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(backend='xgrammar', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=None, served_model_name=meta-llama/CodeLlama-34b-hf, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=None, chunked_prefill_enabled=False, use_async_output_proc=False, pooler_config=None, compilation_config={"compile_sizes": [], "cudagraph_capture_sizes": [], "max_capture_size": 0}, use_cached_outputs=True, 
+2026-10-14 15:50:56,191 - vllm.executor.multiproc_worker_utils - WARNING - Reducing Torch parallelism from 64 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+2026-10-14 15:50:57,517 - vllm.platforms.cuda - INFO - Using Flash Attention backend.
+2026-10-14 15:51:01,652 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:51:04,927 - vllm.executor.multiproc_worker_utils - INFO - Worker ready; awaiting tasks
+2026-10-14 15:51:04,943 - vllm.plugins - INFO - Available plugins for group vllm.general_plugins:
+2026-10-14 15:51:04,944 - vllm.plugins - INFO - - lora_filesystem_resolver -> vllm.plugins.lora_resolvers.filesystem_resolver:register_filesystem_resolver
+2026-10-14 15:51:04,945 - vllm.plugins - INFO - All plugins in this group will be loaded. Set `VLLM_PLUGINS` to control which plugins to load.
+2026-10-14 15:51:06,102 - vllm.platforms.cuda - INFO - Using Flash Attention backend.
+2026-10-14 15:51:07,258 - vllm.utils - INFO - Found nccl from library libnccl.so.2
+2026-10-14 15:51:07,258 - vllm.utils - INFO - Found nccl from library libnccl.so.2
+2026-10-14 15:51:07,262 - vllm.distributed.device_communicators.pynccl - INFO - vLLM is using nccl==2.21.5
+2026-10-14 15:51:07,263 - vllm.distributed.device_communicators.pynccl - INFO - vLLM is using nccl==2.21.5
+2026-10-14 15:51:07,602 - vllm.distributed.device_communicators.custom_all_reduce_utils - INFO - generating GPU P2P access cache in /global/homes/z/zz986/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+2026-10-14 15:51:12,385 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:51:19,602 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:51:19,612 - vllm.platforms - INFO - Automatically detected platform cuda.
+2026-10-14 15:51:26,250 - vllm.distributed.device_communicators.custom_all_reduce_utils - INFO - reading GPU P2P access cache from /global/homes/z/zz986/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+2026-10-14 15:51:26,250 - vllm.distributed.device_communicators.custom_all_reduce_utils - INFO - reading GPU P2P access cache from /global/homes/z/zz986/.cache/vllm/gpu_p2p_access_cache_for_0,1.json
+2026-10-14 15:51:26,279 - vllm.distributed.device_communicators.shm_broadcast - INFO - vLLM message queue communication handle: Handle(local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_4e930b66'), local_subscribe_addr='ipc:///tmp/44e5339a-534c-404e-a5a0-cbdc44e8bf38', remote_subscribe_addr=None, remote_addr_ipv6=False)
+2026-10-14 15:51:26,319 - vllm.distributed.parallel_state - INFO - rank 1 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 1, EP rank 1
+2026-10-14 15:51:26,319 - vllm.distributed.parallel_state - INFO - rank 0 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+2026-10-14 15:51:26,321 - vllm.worker.model_runner - INFO - Starting to load model meta-llama/CodeLlama-34b-hf...
+2026-10-14 15:51:26,322 - vllm.worker.model_runner - INFO - Starting to load model meta-llama/CodeLlama-34b-hf...
+2026-10-14 15:51:26,695 - vllm.worker.model_runner - INFO - Model loading took 31.4313 GiB and 0.209800 seconds
+2026-10-14 15:51:26,698 - vllm.worker.model_runner - INFO - Model loading took 31.4313 GiB and 0.210420 seconds
+2026-10-14 15:51:33,989 - vllm.worker.worker - INFO - Memory profiling takes 7.08 seconds
+the current vLLM instance can use total_gpu_memory (39.49GiB) x gpu_memory_utilization (0.90) = 35.54GiB
+model weights take 31.43GiB; non_torch_memory takes 0.75GiB; PyTorch activation peak memory takes 1.77GiB; the rest of the memory reserved for KV Cache is 1.60GiB.
+2026-10-14 15:51:34,131 - vllm.worker.worker - INFO - Memory profiling takes 7.25 seconds
+the current vLLM instance can use total_gpu_memory (39.49GiB) x gpu_memory_utilization (0.90) = 35.54GiB
+model weights take 31.43GiB; non_torch_memory takes 0.75GiB; PyTorch activation peak memory takes 1.77GiB; the rest of the memory reserved for KV Cache is 1.60GiB.
+2026-10-14 15:51:34,317 - vllm.engine.llm_engine - INFO - Overriding num_gpu_blocks=1090 with num_gpu_blocks_override=1024
+2026-10-14 15:51:34,321 - vllm.executor.executor_base - INFO - # cuda blocks: 1024, # CPU blocks: 10922
+2026-10-14 15:51:34,325 - vllm.executor.executor_base - INFO - Maximum concurrency for 16368 tokens per request: 1.00x
+2026-10-14 15:51:47,735 - vllm.engine.llm_engine - INFO - init engine (profile, create kv cache, warmup model) took 21.03 seconds
+2026-10-14 15:51:48,140 - vllm.entrypoints.openai.api_server - INFO - Starting vLLM API server on http://0.0.0.0:8000
+2026-10-14 15:51:48,142 - vllm.entrypoints.launcher - INFO - Available routes are:
+2026-10-14 15:51:48,144 - vllm.entrypoints.launcher - INFO - Route: /openapi.json, Methods: GET, HEAD
+2026-10-14 15:51:48,146 - vllm.entrypoints.launcher - INFO - Route: /docs, Methods: GET, HEAD
+2026-10-14 15:51:48,148 - vllm.entrypoints.launcher - INFO - Route: /docs/oauth2-redirect, Methods: GET, HEAD
+2026-10-14 15:51:48,152 - vllm.entrypoints.launcher - INFO - Route: /redoc, Methods: GET, HEAD
+2026-10-14 15:51:48,154 - vllm.entrypoints.launcher - INFO - Route: /metrics, Methods: GET
+2026-10-14 15:54:53,092 - vllm.engine.metrics - INFO - Avg prompt throughput: 254.9 tokens/s, Avg generation throughput: 9.4 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 8.1%, CPU KV cache usage: 0.0%.
+2026-10-14 15:54:58,108 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 31.9 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 9.1%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:03,446 - vllm.engine.metrics - INFO - Avg prompt throughput: 3097.5 tokens/s, Avg generation throughput: 57.9 tokens/s, Running: 8 reqs, Swapped: 0 reqs, Pending: 1 reqs, GPU KV cache usage: 94.5%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:07,160 - vllm.core.scheduler - WARNING - Sequence group cmpl-c95fa12817a14571ac5209e133c32cf4-0 is preempted by PreemptionMode.SWAP mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+2026-10-14 15:55:08,469 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 222.0 tokens/s, Running: 7 reqs, Swapped: 1 reqs, Pending: 13 reqs, GPU KV cache usage: 87.7%, CPU KV cache usage: 1.3%.
+2026-10-14 15:55:13,472 - vllm.engine.metrics - INFO - Avg prompt throughput: 1398.4 tokens/s, Avg generation throughput: 188.5 tokens/s, Running: 9 reqs, Swapped: 0 reqs, Pending: 24 reqs, GPU KV cache usage: 94.1%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:18,493 - vllm.engine.metrics - INFO - Avg prompt throughput: 2038.2 tokens/s, Avg generation throughput: 182.2 tokens/s, Running: 11 reqs, Swapped: 0 reqs, Pending: 28 reqs, GPU KV cache usage: 94.9%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:23,513 - vllm.engine.metrics - INFO - Avg prompt throughput: 420.1 tokens/s, Avg generation throughput: 284.3 tokens/s, Running: 10 reqs, Swapped: 1 reqs, Pending: 27 reqs, GPU KV cache usage: 88.4%, CPU KV cache usage: 1.2%.
+2026-10-14 15:55:28,527 - vllm.engine.metrics - INFO - Avg prompt throughput: 731.3 tokens/s, Avg generation throughput: 281.1 tokens/s, Running: 12 reqs, Swapped: 0 reqs, Pending: 21 reqs, GPU KV cache usage: 99.8%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:33,532 - vllm.engine.metrics - INFO - Avg prompt throughput: 182.2 tokens/s, Avg generation throughput: 299.5 tokens/s, Running: 11 reqs, Swapped: 0 reqs, Pending: 20 reqs, GPU KV cache usage: 99.2%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:38,536 - vllm.engine.metrics - INFO - Avg prompt throughput: 1296.5 tokens/s, Avg generation throughput: 216.0 tokens/s, Running: 11 reqs, Swapped: 0 reqs, Pending: 16 reqs, GPU KV cache usage: 92.6%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:43,562 - vllm.engine.metrics - INFO - Avg prompt throughput: 1040.8 tokens/s, Avg generation throughput: 231.8 tokens/s, Running: 9 reqs, Swapped: 0 reqs, Pending: 12 reqs, GPU KV cache usage: 95.3%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:48,573 - vllm.engine.metrics - INFO - Avg prompt throughput: 2169.2 tokens/s, Avg generation throughput: 169.6 tokens/s, Running: 10 reqs, Swapped: 0 reqs, Pending: 4 reqs, GPU KV cache usage: 98.4%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:53,602 - vllm.engine.metrics - INFO - Avg prompt throughput: 383.3 tokens/s, Avg generation throughput: 229.7 tokens/s, Running: 7 reqs, Swapped: 0 reqs, Pending: 3 reqs, GPU KV cache usage: 85.3%, CPU KV cache usage: 0.0%.
+2026-10-14 15:55:58,607 - vllm.engine.metrics - INFO - Avg prompt throughput: 1165.4 tokens/s, Avg generation throughput: 164.2 tokens/s, Running: 7 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 97.8%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:03,613 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 163.8 tokens/s, Running: 4 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 53.1%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:08,625 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 113.5 tokens/s, Running: 3 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 46.5%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:13,641 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 92.1 tokens/s, Running: 3 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 49.3%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:18,663 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 66.1 tokens/s, Running: 2 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 30.3%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:23,685 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 54.2 tokens/s, Running: 1 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 14.6%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:38,229 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 9.9 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+2026-10-14 15:56:48,251 - vllm.engine.metrics - INFO - Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+2026-10-14 15:57:06,281 - vllm.executor.multiproc_worker_utils - INFO - Terminating local vLLM worker processes
+2026-10-14 15:57:06,403 - vllm.entrypoints.launcher - INFO - Shutting down FastAPI HTTP server.
